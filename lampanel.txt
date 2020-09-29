@@ -1,0 +1,18 @@
+System 1
+system 1
+out r0,p0
+out r0,p1
+out r0,p2
+mov 0180,r0
+out r0,p3
+out r0,p4
+
+mov 1,r1
+SAM:
+system A
+system B
+system B
+system A
+jnz SAM
+
+stop
